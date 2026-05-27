@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hambúrgueres artesanais com pão brioche.">
+  <title>🍔 Burger House</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="🍔 Burger House — página inicial">🍔 Burger House</a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#lista">Lista</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">🍔 Burger House</h1>
+        <p class="lead">Hambúrgueres artesanais com pão brioche.</p>
+        <a class="btn" href="#cardapio">Ver cardápio</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title">Sobre nós</h2>
+        <p>Somos Burger House. Atendemos com carinho desde sempre. A Burger House nasceu para oferecer hambúrgueres feitos com carinho e qualidade. Desde sempre, atendemos cada cliente com dedicação, criando sabores e momentos especiais.</p>
+      </div>
+    </section>
+
+     <section id="lista" class="section" aria-labelledby="lista-title">
+      <div class="container">
+        <h2 id="lista-title">Lista de ingredientes</h2>
+        <ul class="ingredient-list" aria-live="polite">
+          <!-- Ingredientes injetados via JS a partir de js/dados.js -->
+        </ul>
+      </div>
+
+        </section>
+      <section id="lista" class="section" aria-labelledby="lista-title">
+  <div class="container">
+    <h2 id="lista-title">lista</h2>
+
+       <div class="lista-wrapper">
+      <div class="lista-texto">
+        <p><strong>1. King Bacon </strong></p>
+        <p><strong>2. King Duplo Bacon </strong></p>
+        <p><strong>3. Mega Stacker Rodeio 2.0 </strong></p>
+        <p><strong>4. Mega Stacker Rodeio 3.0 </strong></p>
+        <p><strong>5. Whopper Rodeio </strong></p>
+        <p><strong>6. Whopper Barbecue Bacon </strong></p>
+        <p><strong>7. Whopper Duplo </strong></p>
+        <p><strong>8. Whopper Furioso </strong></p>
+      </div>
+
+    <section id="cardapio" class="section section--alt" aria-labelledby="cardapio-title">
+      <div class="container">
+        <h2 id="cardapio-title">Cardápio</h2>
+        <ul class="cards" id="lista-itens" aria-live="polite">
+          <!-- Itens injetados via JS a partir de js/dados.js -->
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="section" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Fale com a gente</h2>
+        <form class="form" novalidate aria-describedby="form-help">
+          <p id="form-help" class="muted">Os campos marcados com * são obrigatórios.</p>
+
+          <div class="field">
+            <label for="nome">Nome *</label>
+            <input id="nome" name="nome" type="text" required autocomplete="name" aria-required="true">
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" aria-required="true">
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+          <p id="form-status" role="status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano"></span> Burger House. Projeto Profiissional — Empresa InovaMax · Henzo/Luis/Yarah/Sarah/Jose.</p>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
